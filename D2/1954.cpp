@@ -17,7 +17,8 @@ int main()
 			arr[i] = new int[N];
 			memset(arr[i], 0, sizeof(int)*N);
 		}
-		for (int loop = 1; loop <= N*N; ++loop)
+		int loopLimit = N*N;
+		for (int loop = 1; loop <= loopLimit; ++loop)
 		{
 			arr[y][x] = loop;
 			switch (dir)
